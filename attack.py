@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import hashlib 
 def get_initialise_driver():
 	driver = webdriver.Chrome()
-	driver.get("http://host:8080/)
+	driver.get("http://host:8080/")
 	if "Login" in driver.title:
 		return driver
 	else: 
